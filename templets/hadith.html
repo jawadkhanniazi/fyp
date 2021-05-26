@@ -19,6 +19,11 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'images/ico/apple-touch-icon-114-precomposed.png' %}">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'images/ico/apple-touch-icon-72-precomposed.png' %}">
 <link rel="apple-touch-icon-precomposed" href="{% static 'images/ico/apple-touch-icon-57-precomposed.png' %}">
+<script>
+  function func(){
+    $("#div1").fadeIn().delay(5000).fadeOut();
+  }
+</script>
 <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -114,16 +119,7 @@
 <li><a href="/">Home</a></li>
 <li><a href="/quran">Search From Quran </a></li>
 <li class="active"><a href="/hadith">Search From Hadith</a></li>
-<li><a href="prayers.html">Learn Duas</a></li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">Drop Down<i class="fa fa-angle-down"></i></a>
-<ul class="dropdown-menu">
-<li><a href="#">One</a></li>
-<li><a href="#">One</a></li>
-<li><a href="#">One</a></li>
-<li><a href="#">One</a></li>
-</ul>
-</li>
+<li><a href="/prayers">Learn Duas</a></li>
 <li><a href="/contact">Contact</a></li>
 </ul>
 </div>
@@ -131,6 +127,21 @@
 </nav>
 </header>
 <section>
+
+    <div id="div1" style="display:none;margin-bottom: 50px">
+        <div class="container">
+            <div class="alert alert-success">
+              <div style="text-align: center;"> 
+                  <strong style="font-size: 25px">Speak Now </strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+              </div>
+              
+                  
+              
+                
+              </div>
+        </div>
+        </div>
 <div class="wrap">
         <form action="searchFromHadith">
         <div class="searchh">
@@ -139,7 +150,7 @@
            
           <button type="submit" class="searchButton">
               <i class="fa fa-search"></i>
-              <button type="submit" class="searchButton" name="vs">
+              <button type="submit" class="searchButton" name="vs" onclick="func()">
                   
               <i class="fa fa-microphone" aria-hidden="true"></i>
              
@@ -216,13 +227,14 @@
 <div class="container" >
 <div class="row">
 <div class="col-sm-6">
-<a target="_blank" href="" title="Free Islamic Templates">QURAN WORLS</a> &copy;  All Rights Reserved.
+<a target="_blank" href="" title="Free Islamic Templates">QURAN WORLD</a> &copy;  All Rights Reserved.
 </div>
 <div class="col-sm-6">
 <ul class="pull-right">
 <li><a href="/">Home</a></li>
 <li><a href="quran">Search From Quran</a></li>
-<li><a href="hadith">Search From Hadith</a></li>
+<li><a href="/hadith">Search From Hadith</a></li>
+<li><a href="/prayers">Learn Duas</a></li>
 <li><a href="/contact">Contact</a></li>
 </ul>
 </div>

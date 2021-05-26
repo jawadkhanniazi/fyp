@@ -23,6 +23,7 @@ urlpatterns = [
     path('quran/test',include('quranSearchEngine.urls')),
     path('hadith/',include('hadithSearchEngine.urls')),
     path('contact/',include('contect.urls')),
+    path('prayers/',include('dua.urls')),
     path('',include('contect.urls')),
    
     path('admin/', admin.site.urls),

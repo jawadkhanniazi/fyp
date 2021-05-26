@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Islam World</title>
+<title>Quran World</title>
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
 <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
@@ -61,24 +61,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="{% static 'images/log.png' %}" alt="logo"></a>
+                <a class="navbar-brand" href="/"><img src="{% static 'images/log.png' %}" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/quran">Search From Quran</a></li>
                 <li><a href="/hadith">Search From Hadith</a></li>
-                <li><a href="prayers.html">Learn Duas</a></li>
-                <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn Islam<i class="fa fa-angle-down"></i></a>
-                <ul class="dropdown-menu">
-                <li><a href="#">One</a></li>
-                <li><a href="#">One</a></li>
-                <li><a href="#">One</a></li>
-                <li><a href="#">One</a></li>
-                </ul>
-                </li>
-                <li class="active"><a href="contact">Contact</a></li>
+                <li><a href="/prayers">Learn Duas</a></li>
+                
+                <li class="active"><a href="/contact">Contact</a></li>
                 </ul>
                 </div>
                 </div>
@@ -106,11 +98,11 @@
         </div>
         <div class="form-group">
         <label>Phone</label>
-        <input type="number" class="form-control" name="phone">
+        <input type="number" class="form-control" name="phone" required="required">
         </div>
         <div class="form-group">
         <label>Company Name</label>
-        <input type="text" class="form-control"  name="cName">
+        <input type="text" class="form-control"  name="cName"required="required">
         </div>
         </div>
         <div class="col-sm-5">
@@ -172,13 +164,14 @@ fa17-bse-014@cuiwah.edu.pk</p>
         <div class="container">
         <div class="row">
         <div class="col-sm-6">
-        <a target="_blank" href="" title="Free Islamic Templates">QURAN WORLS</a> &copy;  All Rights Reserved.
+        <a target="_blank" href="" title="Free Islamic Templates">QURAN WORLD</a> &copy;  All Rights Reserved.
         </div>
         <div class="col-sm-6">
         <ul class="pull-right">
         <li><a href="/">Home</a></li>
         <li><a href="/quran">Search From Quran</a></li>
         <li><a href="/hadith">Search From Hadith</a></li>
+        <li><a href="/prayers">Learn Duas</a></li>
         <li><a href="contact">Contact</a></li>
         </ul>
         </div>

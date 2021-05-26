@@ -14,7 +14,7 @@ def searchQuery(request):
     
 
 
-    if 'vs' in request.GET:
+    if 'vs' in request.GET and not query:
         
         r = sr.Recognizer()
         with sr.Microphone() as source:
@@ -131,6 +131,19 @@ def searchQuery(request):
         except ExpectedError as e:
             results = ''
             return render(request, 'quran.html',{'results':results,'query':''})    
+    else:
+        if not query:
+            c= []
+            query = ''
+            resultset = search("sjdf sefj")
+            JUZZ = []
+            AYAT = []
+            ENGLISH = []
+            URDU = []
+            AYATREF = []
+            SURAH = []
+            results = zip(JUZZ,AYAT,ENGLISH,URDU,AYATREF,SURAH,c)
+            return render(request, 'quran.html',{'results':results,'query':query})
 
 def home(request):
     c= []
